@@ -7,7 +7,7 @@ let server: Handler;
 
 async function bootstrap(): Promise<Handler> {
   const app = await NestFactory.create(AppModule);
-  const globalPrefix = 'users-api';
+  const globalPrefix = 'accounts-api';
   app.setGlobalPrefix(globalPrefix);
   await app.init();
 
